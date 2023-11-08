@@ -26,16 +26,16 @@ const Api = () => {
           <img
             className="desktop"
             src="images/pattern-divider-desktop.svg"
-            alt=""
+            alt="desktop-image"
           />
           <img
             className="mobile"
             src="images/pattern-divider-mobile.svg"
-            alt=""
+            alt="mobile-image"
           />
         </div>
         <button onClick={apiGet}>
-          <img src="images/icon-dice.svg" alt="" />
+          <img src="images/icon-dice.svg" alt="dice-icon" />
         </button>
       </div>
     </>
