@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./api.scss";
 
 const Api = () => {
   const [data, setdata] = useState([]);
   const [number, setNumber] = useState("");
+  useEffect(() => {
+    apiGet();
+  }, []);
   const apiGet = () => {
     fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
